@@ -1,19 +1,18 @@
 {
   "name": "react-portfolio",
-  "version": "1.0.0",
-  "description": "Derek Marchese's Full Stack React Portfolio",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.5.0",
-    "bootstrap": "^5.3.1",
-    "dotenv": "^16.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "axios": "^1.5.0",
+    "bootstrap": "^5.3.1",
+    "dotenv": "^16.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
