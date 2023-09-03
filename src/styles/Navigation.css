@@ -2,22 +2,10 @@ body {
     font: 16px/1.6 "Roboto", Helvetica, sans-serif;
     font-weight: 300;
     margin: 0;
-};
-
-.nav {
-    background-color: rgba(145, 13, 13, .8);
-};
+}
 
 .person-title {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
-    margin: 0;
-    text-transform: uppercase;
-};
-
-.person-subtitle {
-    font-size: 10px;
-    font-weight: 300;
-    margin: 0;
-    text-transform: uppercase;
-};
+    margin-right: 450px;
+}
