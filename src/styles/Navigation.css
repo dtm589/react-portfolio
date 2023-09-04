@@ -9,3 +9,46 @@ body {
     font-weight: 500;
     margin-right: 450px;
 }
+
+.image {
+    width: 100%;
+}
+
+#intro .container-head {
+    color: white;
+    font-weight: 100;
+    font-size: 1.0rem;
+    position: absolute;
+    top: 25rem;
+    padding: 0 1.5rem;
+}
+
+h3 {
+    background-color: #1695a7;
+    color: #FFFFFF;
+    font-weight: 200;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding: 30px 40px;
+}
+
+blockquote {
+    border-left: 5px solid rgba(51, 24, 24, 0.514);
+    color: rgba(51, 24, 24, 0.514);
+    font-size: 150%;
+    font-weight: 400;
+    margin: 20px 15px;
+    padding-left: 2.5rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 0px;
+    line-height: 37px;
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    margin-right: 40px;
+}

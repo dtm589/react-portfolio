@@ -1,13 +1,7 @@
 import React from "react";
-import Navigation from "./components/Navigation";
-import Footer from './components/Footer';
+import PorfolioContainer from './components/PorfolioContainer';
 
 
-function App() {
-  return <div>
-    <Navigation />
-    <Footer />
-  </div>;
-}
+const App = () => <PorfolioContainer />
 
 export default App;
