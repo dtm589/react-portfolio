@@ -22,8 +22,8 @@ export default function AboutMe() {
                 <section id="intro" alt="Picture of Derek Marchese">
                     <Image className='image' src={pic} fluid />
                     <div class="container-head">
-                        <h2>Let's <span style={styles.headingOne}>develop content</span><br></br> that <span
-                            style={styles.headingTwo}>makes an impact.</span></h2>
+                        <h1>Let's <span style={styles.headingOne}>develop content</span><br></br> that <span
+                            style={styles.headingTwo}>makes an impact.</span></h1>
                     </div>
                 </section>
                 

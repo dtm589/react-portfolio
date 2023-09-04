@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export default function Footer() {
     return (
-        <Navbar className='fixed-bottom bg-danger bg-opacity-75 pt-3 pb-3'>
+        <Navbar className='bg-danger bg-opacity-75 pt-3 pb-3'>
             <Container>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav'>

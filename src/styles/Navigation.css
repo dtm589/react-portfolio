@@ -18,9 +18,9 @@ body {
     color: white;
     font-weight: 100;
     font-size: 1.0rem;
-    position: absolute;
-    top: 25rem;
     padding: 0 1.5rem;
+    position: absolute;
+    top: 29rem;
 }
 
 h3 {
