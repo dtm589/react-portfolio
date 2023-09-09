@@ -6,6 +6,11 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Footer from '../Footer';
 
+const styles = {
+    marginTop: {
+        marginTop: '4.0rem',
+    },
+};
 
 export default function Contact() {
 
@@ -13,14 +18,14 @@ export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [show, setShow] = useState('false');
+    const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
 
     const handleInputChange = (e) => {
-        const { input, value } = e.target;
+        const { name, value } = e.target;
 
-        return input === 'name' ? setName(value)
+        return name === 'name' ? setName(value)
             : 'email' ? setEmail(value)
                 : setMessage(value);
     };
@@ -44,9 +49,9 @@ export default function Contact() {
         <main>
             <Container>
 
-                <Form ref={form}>
+                <Form ref={form} style={styles.marginTop}>
                     <Form.Group className='mb-3' controlId='name'>
-                        <Form.Label>Your Name:</Form.Label>
+                        <Form.Label >Your Name:</Form.Label>
                         <Form.Control type='text' value={name} name='name' onChange={handleInputChange} />
                     </Form.Group>
                     <Form.Group className='mb-3' controlId='email'>
@@ -57,7 +62,7 @@ export default function Contact() {
                         <Form.Label>Your Message:</Form.Label>
                         <Form.Control as='textarea' rows={5} value={message} name='message' onChange={handleInputChange} />
                     </Form.Group>
-                    <Button onSubmit={handleShow} variant='primary' type='submit'>Submit</Button>
+                    <Button  onSubmit={handleShow} variant='primary' type='submit'>Submit</Button>
                 </Form>
 
                 <Modal show={show} onHide={handleClose}>

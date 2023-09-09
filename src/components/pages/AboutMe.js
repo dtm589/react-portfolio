@@ -12,6 +12,9 @@ const styles = {
     headingTwo: {
         borderBottom: '5px solid #1695a7',
     },
+    marginBottom: {
+        marginBottom: '7.0rem'
+    },
 };
 
 export default function AboutMe() {
@@ -45,7 +48,7 @@ export default function AboutMe() {
                             lives, and I wanted to be a part of that transformation. So, I decided to make a career change and
                             pursue my passion for web development.
                         </p>
-                        <p>
+                        <p style={styles.marginBottom}>
                             As a web Developer, I enjoy using my obsessive attention to details, my passion for making things,
                             and my goal oriented work ethic to literally impact the world.
                         </p>
