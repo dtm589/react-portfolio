@@ -24,11 +24,14 @@ export default function Contact() {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-
-        return name === 'name' ? setName(value)
-            : 'email' ? setEmail(value)
-                : setMessage(value);
-    };
+        if (name === "name") {
+          setName(value);
+        } else if (name === "email") {
+          setEmail(value);
+        } else {
+          setMessage(value);
+        }
+      };
 
     const handleShow = (e) => {
         e.preventDefault();
@@ -49,7 +52,7 @@ export default function Contact() {
         <main>
             <Container>
 
-                <Form ref={form} style={styles.marginTop}>
+                <Form onSubmit={handleShow} ref={form} style={styles.marginTop}>
                     <Form.Group className='mb-3' controlId='name'>
                         <Form.Label >Your Name:</Form.Label>
                         <Form.Control type='text' value={name} name='name' onChange={handleInputChange} />
@@ -62,7 +65,7 @@ export default function Contact() {
                         <Form.Label>Your Message:</Form.Label>
                         <Form.Control as='textarea' rows={5} value={message} name='message' onChange={handleInputChange} />
                     </Form.Group>
-                    <Button  onSubmit={handleShow} variant='primary' type='submit'>Submit</Button>
+                    <Button variant='primary' type='submit'>Submit</Button>
                 </Form>
 
                 <Modal show={show} onHide={handleClose}>
