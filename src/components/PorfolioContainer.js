@@ -15,6 +15,7 @@ export default function PorfolioContainer() {
             deployed: '',
             image: 'https://github.com/dtm589/professional-social-media/blob/main/assets/Greenshot%202023-08-03%2019.24.06.png?raw=true',
             description: 'A locational based professional social media site. Group project that I focused on the database with MySQL and Sequelize. Also worked on the API with express.',
+            hasDeploy: false,
         },
         {
             id: 2,
@@ -23,6 +24,7 @@ export default function PorfolioContainer() {
             deployed: '',
             image: 'https://github.com/dtm589/blog-site/blob/main/assets/screenshot.png?raw=true',
             description: 'A blog site where you can post and comment. Follows MVC and uses technology such as handlebars, node, MySQL, and Sequelize.',
+            hasDeploy: false,
         },
         {
             id: 3,
@@ -31,6 +33,7 @@ export default function PorfolioContainer() {
             deployed: 'https://dtm589.github.io/weather-dashboard/',
             image: 'https://github.com/dtm589/weather-dashboard/raw/main/assets/images/Capture.PNG',
             description: 'Search weather by city using HTML, CSS, JavaScript, jQuery, and local memeory.',
+            hasDeploy: true,
         },
         {
             id: 4,
@@ -39,6 +42,7 @@ export default function PorfolioContainer() {
             deployed: 'https://dtm589.github.io/daily-planner/',
             image: 'https://github.com/dtm589/daily-planner/raw/main/assets/images/dailyplanner.PNG',
             description: 'A work day planner that utilizes Day.js and jQuery.',
+            hasDeploy: true,
         },
         {
             id: 5,
@@ -47,6 +51,7 @@ export default function PorfolioContainer() {
             deployed: '',
             image: 'https://github.com/dtm589/social-network-api/raw/main/assets/Capture.jpg',
             description: 'The back end of a social network that implements CRUD using Node, Express, MongoDB, and Mongoose.',
+            hasDeploy: false,
         },
         {
             id: 6,
@@ -55,6 +60,7 @@ export default function PorfolioContainer() {
             deployed: '',
             image: 'https://github.com/dtm589/Employee-Tracker/raw/main/assets/Capture.PNG',
             description: 'Creating the CRUD operations on a MySQL database using Express and Inquierer.',
+            hasDeploy: false,
         },
     ];
 
@@ -63,7 +69,7 @@ export default function PorfolioContainer() {
             return <AboutMe />;
         }
         if (currentPage === 'Project') {
-            return <Project />
+            return <Project projects={projects} />
         }
         if (currentPage === 'Contact') {
             return <Contact />
@@ -74,6 +80,7 @@ export default function PorfolioContainer() {
 
     return (
         <div>
+        
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
         </div>
