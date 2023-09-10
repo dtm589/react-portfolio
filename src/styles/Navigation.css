@@ -12,15 +12,18 @@ body {
 
 .image {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #intro .container-head {
-    color: white;
+    color: black;
     font-weight: 100;
     font-size: 1.0rem;
     padding: 0 1.5rem;
     position: absolute;
-    top: 29rem;
+    top: 10rem;
+    left: 15rem;
 }
 
 h3 {

@@ -3,6 +3,7 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Ratio from 'react-bootstrap/Ratio';
 import Footer from '../Footer';
 import pic from '../image/derek.jpg'
 
@@ -12,6 +13,7 @@ const styles = {
     },
     headingTwo: {
         borderBottom: '5px solid #1695a7',
+        color: 'white',
     },
     marginBottom: {
         marginBottom: '7.0rem'
@@ -24,13 +26,13 @@ export default function AboutMe() {
             <Container fluid>
                 <Row>
                     <Col>
-                        <section id="intro" alt="Picture of Derek Marchese">
-                            <Image className='image' src={pic} thumbnail fluid />
-                            <div class="container-head">
+                        <Container className='text-center' id="intro" alt="Picture of Derek Marchese">
+                            <Image style={{ height: '800px', width: '823px'}} className='image' src={pic} rounded />
+                            <div style={{ maxWidth: '100%'}} class="container-head">
                                 <h1>Let's <span style={styles.headingOne}>develop content</span><br></br> that <span
                                     style={styles.headingTwo}>makes an impact.</span></h1>
                             </div>
-                        </section>
+                        </Container>
                     </Col>
                 </Row>
                 <Row>
