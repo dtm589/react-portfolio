@@ -3,7 +3,6 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Ratio from 'react-bootstrap/Ratio';
 import Footer from '../Footer';
 import pic from '../image/derek.jpg'
 
@@ -12,8 +11,8 @@ const styles = {
         backgroundColor: '#1695a7',
     },
     headingTwo: {
-        borderBottom: '5px solid #1695a7',
-        color: 'white',
+        borderBottom: '5px solid black',
+        color: '#1695a7',
     },
     marginBottom: {
         marginBottom: '7.0rem'
